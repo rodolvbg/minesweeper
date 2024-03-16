@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div>
+            <form id="id_generate_table_button_form" action="#">
+                <div class="row">
+                    <div>
+                        <label for="id_rows_number">Number of rows</label>
+                        <input type="number" id="id_rows_number" name="rows_number" required>
+                    </div>
+                    <div>
+                        <label for="id_columns_number">Number of columns</label>
+                        <input type="number" id="id_columns_number" name="columns_number" required>
+                    </div>
+                    <div>
+                        <label for="id_mines_number">Number of mines</label>
+                        <input type="number" id="id_mines_number" name="mines_number" disabled>
+                    </div>
+                    <div>
+                        <button id="id_submit_button" type="submit">Generate table</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <strong>Time: </strong><span id="id_timer">0</span>
+        </div>
+        <div>
+            <table id="id_table">
+                <tbody id="id_body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
